@@ -40,6 +40,7 @@ class Position
 
   def stone_color(board)
     return nil if out_of_board?
+
     board[row][col]
   end
 
@@ -62,7 +63,4 @@ class Position
     else raise 'Unknown direction'
     end
   end
-
-
-
 end
